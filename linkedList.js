@@ -38,6 +38,9 @@ class LinkedList {
     }
     return counter;
   }
+  getHead() {
+    return this.head;
+  }
 }
 
 export default LinkedList;
