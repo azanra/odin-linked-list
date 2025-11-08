@@ -1,13 +1,13 @@
 class Node {
   constructor() {
-    this.value = null;
-    this.nextNode = null;
+    this._value = null;
+    this._nextNode = null;
   }
   set value(value) {
-    this.value = value;
+    this._value = value;
   }
   set nextNode(nextNode) {
-    this.nextNode = nextNode;
+    this._nextNode = nextNode;
   }
 }
 
