@@ -22,6 +22,13 @@ class LinkedList {
       }
     }
   }
+  prepend(value) {
+    const temp = this.head;
+    const node = new Node();
+    node.value = value;
+    this.head = node;
+    this.head.nextNode = temp;
+  }
 }
 
 export default LinkedList;
