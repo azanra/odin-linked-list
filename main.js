@@ -9,4 +9,5 @@ linkedList.prepend("owo");
 // console.log("size ", linkedList.size());
 // console.log("head ", linkedList.getHead());
 // console.log("tail ", linkedList.tail());
-console.log("at ", linkedList.at(5));
+// console.log("at ", linkedList.at(5));
+console.log("pop ", linkedList.pop());
