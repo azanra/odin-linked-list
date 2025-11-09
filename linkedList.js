@@ -41,6 +41,16 @@ class LinkedList {
   getHead() {
     return this.head;
   }
+  tail() {
+    let temp = this.head;
+    while (temp !== null) {
+      if (temp._nextNode === null) {
+        break;
+      }
+      temp = temp._nextNode;
+    }
+    return temp;
+  }
 }
 
 export default LinkedList;
