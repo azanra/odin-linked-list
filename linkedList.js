@@ -76,6 +76,18 @@ class LinkedList {
     }
     return this.head;
   }
+  contains(value) {
+    let isContain = false;
+    let temp = this.head;
+    while (temp !== null) {
+      if (temp._value === value) {
+        isContain = true;
+        break;
+      }
+      temp = temp._nextNode;
+    }
+    return isContain;
+  }
 }
 
 export default LinkedList;
