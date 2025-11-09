@@ -51,6 +51,18 @@ class LinkedList {
     }
     return temp;
   }
+  at(index) {
+    let pointer = 0;
+    let temp = this.head;
+    while (temp !== null && pointer !== index) {
+      pointer++;
+      temp = temp._nextNode;
+    }
+    if (index > pointer) {
+      return `index exceed the length of the list, list is only having ${pointer} nodes`;
+    }
+    return temp;
+  }
 }
 
 export default LinkedList;
