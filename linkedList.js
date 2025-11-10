@@ -102,6 +102,18 @@ class LinkedList {
     }
     return isFound;
   }
+  toString() {
+    let nodeToString = "";
+    let temp = this.head;
+    while (temp !== null) {
+      nodeToString += `( ${temp._value} ) -> `;
+      if (temp._nextNode === null) {
+        nodeToString += `null`;
+      }
+      temp = temp._nextNode;
+    }
+    return nodeToString;
+  }
 }
 
 export default LinkedList;
