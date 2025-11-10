@@ -88,6 +88,20 @@ class LinkedList {
     }
     return isContain;
   }
+  find(value) {
+    let isFound = null;
+    let pointer = 0;
+    let temp = this.head;
+    while (temp !== null) {
+      if (temp._value === value) {
+        isFound = pointer;
+        break;
+      }
+      pointer++;
+      temp = temp._nextNode;
+    }
+    return isFound;
+  }
 }
 
 export default LinkedList;

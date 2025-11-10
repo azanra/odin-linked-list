@@ -11,4 +11,5 @@ linkedList.prepend("owo");
 // console.log("tail ", linkedList.tail());
 // console.log("at ", linkedList.at(5));
 // console.log("pop ", linkedList.pop());
-console.log("contain ", linkedList.contains("first"));
+// console.log("contain ", linkedList.contains("first"));
+console.log("find ", linkedList.find("third"));
