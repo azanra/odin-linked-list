@@ -114,6 +114,32 @@ class LinkedList {
     }
     return nodeToString;
   }
+  insertAt(value, index) {
+    let pointer = 0;
+    let previous = null;
+    let temp = this.head;
+    if (temp === null) {
+      this.append(value);
+      return this.head;
+    }
+    while (temp !== null) {
+      if (pointer === index) {
+        const node = new Node();
+        node.value = value;
+        node.nextNode = temp;
+        previous._nextNode = node;
+        return this.toString();
+      }
+      if (temp._nextNode === null && index === pointer + 1) {
+        this.append(value);
+        return this.toString();
+      }
+      previous = temp;
+      pointer++;
+      temp = temp._nextNode;
+    }
+    if (index > pointer) return `list only have ${pointer} nodes!`;
+  }
 }
 
 export default LinkedList;
