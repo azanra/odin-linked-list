@@ -140,6 +140,25 @@ class LinkedList {
     }
     if (index > pointer) return `list only have ${pointer} nodes!`;
   }
+  removeAt(index) {
+    let pointer = 0;
+    let previous = null;
+    let temp = this.head;
+    if (index === 0) {
+      this.head = null;
+      return this.toString();
+    }
+    while (temp !== null) {
+      if (pointer === index) {
+        previous._nextNode = temp._nextNode;
+        return this.toString();
+      }
+      pointer++;
+      previous = temp;
+      temp = temp._nextNode;
+    }
+    if (index >= pointer) return `list only have ${pointer} nodes!`;
+  }
 }
 
 export default LinkedList;
