@@ -1,18 +1,11 @@
 import LinkedList from "./linkedList.js";
 
-const linkedList = new LinkedList();
-linkedList.append("first");
-linkedList.append("second");
-linkedList.append("third");
-linkedList.prepend("owo");
-// console.log(linkedList);
-// console.log("size ", linkedList.size());
-// console.log("head ", linkedList.getHead());
-// console.log("tail ", linkedList.tail());
-// console.log("at ", linkedList.at(5));
-// console.log("pop ", linkedList.pop());
-// console.log("contain ", linkedList.contains("first"));
-// console.log("find ", linkedList.find("third"));
-// console.log("to string ", linkedList.toString());
-// console.log("insert at ", linkedList.insertAt("gg", 2));
-console.log("remove at ", linkedList.removeAt(4));
+const list = new LinkedList();
+list.append("dog");
+list.append("cat");
+list.append("parrot");
+list.append("hamster");
+list.append("snake");
+list.append("turtle");
+
+console.log(list.toString());
